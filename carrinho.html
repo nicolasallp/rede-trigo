@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/carrinho.css">
+  <title>Carrinho | Rede Trigo</title>
+</head>
+<body>
+  <header>
+    <div class="user-area">
+      <div>
+        <img src="images/user.png" class="user-logo">
+        <p>Usuário</p>
+        <button onclick="location.href='login.html'" class="btn-sair">Sair</button>
+      </div>
+      <button onclick="location.href='add.html'" class="btn-add">Adicionar produto</button>
+    </div>
+    <img src="images/logo-header.png" class="logo-header">
+    <img src="images/menu-logo.png" class="menu-logo">
+    <div class="menu-area">
+      <a href="index.html">Voltar para a produtos</a>
+    </div>
+  </header>
+    <div class="container">
+      <div class="compra">
+        <div class="compra-card">
+          <button onclick="closeCompra()"><img src="images/x-mark.png" style="width: 26px;" class="x-mark"></button>
+          <img src="images/finalizada.png">
+          <p>Compra finalizada com sucesso!</p>
+        </div>
+      </div>
+      <h1>Meu carrinho</h1>
+      <div class="carrinho"></div>
+      <div class="checkout">
+        <h3>Preço total: <strong id="preco-total"></strong></h3>
+        <button onclick="openCompra()">Finalizar compra</button>
+      </div>
+    </div>
+  <script src="js/cart.js"></script>
+
+</body>
+</html>

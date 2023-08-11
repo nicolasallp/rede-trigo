@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/add.css">
+  <title>Adicionar Produto</title>
+</head>
+<body>
+  <header>
+    <div class="user-area">
+      <div>
+        <img src="images/user.png" class="user-logo">
+        <p>Usuário</p>
+        <button onclick="location.href='login.html'" class="btn-sair">Sair</button>
+      </div>
+    </div>
+    <img src="images/logo-header.png" class="logo-header">
+    <img src="images/menu-logo.png" class="menu-logo">
+    <div class="menu-area">
+      <a href="index.html">Voltar para a produtos</a>
+    </div>
+  </header>
+
+<div class="container">
+  <div class="card">
+    <h1>Adicionar produto</h1>
+    <input type="text" placeholder="Nome do produto" id="nome">
+    <input type="text" placeholder="Preço" id="preco" oninput="formatarNumero(event)">
+    <p>Imagem:</p>
+    <label for="imageInput" id="btn-carregar">Carregar imagem</label>
+    <input type="file" id="imageInput" style="display: none" onchange="uploadImage()">
+    <div id="imgDiv">
+      <img id="image">
+    </div>
+    <button id="btnAdd">Adicionar</button>
+  </div>      
+</div>
+<script src="js/add.js"></script>
+</body>
+</html>

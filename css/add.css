@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* <--- Header ---> */  
+
+header {
+  background-color: #183b61;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  height: 150px;
+}
+
+.sub-header {
+  display: none;
+  align-items: center;
+  width: 100%;
+  background-color: #e22328;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  height: 50px;
+}
+
+.logo-header {
+  width: 400px;
+}
+
+.user-logo {
+  width: 48px;
+}
+
+.menu-logo {
+  display: none;
+  width: 38px;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.user-area>div {
+  display: flex;
+  align-items: center;
+}
+
+.user-area p {
+  font-size: 20px;
+  margin-left: 15px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.user-area button {
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  margin-left: 25px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-sair {
+  background-color: #e22328;
+}
+
+.btn-sair:hover {
+  background-color: #d32026;
+}
+
+.btn-sair:active {
+  background-color: #bb1d22;
+}
+
+.menu-area {
+  display: flex;
+  flex-direction: column;
+  transition: .3s;
+  margin-right: 30px;
+}
+
+.menu-area a {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 38px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu-area:hover {
+  scale: 1.05;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  width: 600px;
+  margin: 60px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  position: relative;
+}
+
+.card input[type="text"] {
+  font-size: 24px;
+  border-radius: 5px;
+  width: 400px;
+  border: 1px solid rgba(0,0,0,0.5);
+  padding: 20px;
+  margin-bottom: 20px;
+  outline-color: #184461;
+}
+
+.card button {
+  margin-top: 50px;
+  font-size: 24px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #e22328;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+}
+
+.card button:hover {
+  background-color: #d32026;
+}
+
+.card button:active {
+  background-color: #bb1d22;
+}
+
+.card h1 {
+  font-weight: 500;
+  color: #184461;
+  margin-bottom: 30px;
+}
+
+.card span {
+  display: inline-block;
+  position: absolute;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.card p {
+  font-weight: 500;
+  color: #184461;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#btn-carregar {
+  background-color: #008100;
+  padding: 8px 13px;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#btn-carregar:hover {
+  background-color: #017b01;
+}
+
+#btn-carregar:active {
+  background-color: #017301;
+}
+
+#imgDiv {
+  border: 1px solid rgba(0,0,0,0.25);
+  height: 256px;
+  width: 256px;
+  border-radius: 10px;
+}
+
+#image {
+  display: none;
+  width: 256px;
+  height: 256px;
+  padding: 10px;
+}
+
+/* <--- Main ---> */
+
+
+.container {
+  display: flex;
+  min-height: calc(100vh - 150px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/* <--- Footer ---> */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: #183b61;
+}
+
+/* <--- Responsivo ---> */

@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* <--- Header ---> */  
+
+header {
+  background-color: #183b61;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  height: 150px;
+}
+
+.sub-header {
+  display: none;
+  align-items: center;
+  width: 100%;
+  background-color: #e22328;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  height: 50px;
+}
+
+.logo-header {
+  width: 400px;
+}
+
+.user-logo {
+  width: 48px;
+}
+
+.menu-logo {
+  display: none;
+  width: 38px;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.user-area>div {
+  display: flex;
+  align-items: center;
+}
+
+.user-area p {
+  font-size: 20px;
+  margin-left: 15px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.user-area button {
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  margin-left: 25px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-sair {
+  background-color: #e22328;
+}
+
+.btn-sair:hover {
+  background-color: #d32026;
+}
+
+.btn-sair:active {
+  background-color: #bb1d22;
+}
+
+
+.btn-add {
+  margin-top: 20px;
+  background-color: #008100;
+}
+
+.btn-add:hover {
+  background-color: #017b01;
+}
+
+.btn-add:active {
+  background-color: #017301;
+}
+
+.menu-area {
+  background-image: url("../images/shopping-cart.png");
+  background-repeat: no-repeat;
+  background-size: 26px;
+  display: flex;
+  flex-direction: column;
+  transition: .3s;
+  margin-right: 30px;
+}
+
+.cart {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 38px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cart2 {
+  display: none;
+  text-decoration: none;
+}
+
+.menu-area:hover {
+  scale: 1.05;
+}
+
+
+/* <--- Main ---> */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.produto {
+  margin: 30px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+  width: 256px;
+}
+
+.produto p {
+  margin-top: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.produto button {
+  width: 100%;
+  padding: 10px;
+  padding-left: 32px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e22328;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 15px;
+  background-image: url("../images/shopping-cart.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-position-x: 10px;
+  cursor: pointer;
+}
+
+.produto button:hover {
+  background-color: #d32026;
+  
+}
+
+.produto button:active {
+  background-color: #bb1d22;
+}
+
+
+.produto-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.produto-info span {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #184461;
+}
+
+#row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+/* <--- Footer ---> */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: #183b61;
+}
+
+/* <--- Responsivo ---> */
+
+
+@media (max-width: 1000px) {
+  .cart {
+    display: none;
+  }
+  .cart2 {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .user-area p, .user-area button {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    justify-content: space-around;
+  }
+  .user-logo, .user-area button, .menu-area {
+    display: none;
+  }
+  header .menu-logo {
+    display: inline-block;
+  }
+  .logo-header {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-header {
+    width: 330px;
+  }
+  header .menu-logo {
+    width: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    justify-content: center;
+  }
+  .user-area, header>.menu-logo{
+    display: none;
+  }
+  .sub-header {
+    display: flex;
+  }
+  .sub-header .menu-logo {
+    display: block;
+    padding: 5px;
+  }
+  .produto {
+    padding: 10px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .logo-header {
+    width: 300px;
+  }
+}
